@@ -10,10 +10,22 @@
 </head>
 
 <body>
-
-        @foreach ($movies as $movie)
-        <h5 class="card-title"> Titolo : {{ $movie->title }}</h5>
-        @endforeach
+    <div class="container mt-5">
+        <div class="row">
+            @foreach ($movies as $movie)
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Titolo: {{ $movie->title }}</h5>
+                            <p class="card-text"><strong>Voto:</strong> {{ $movie->vote }}</p>
+                            <p class="card-text"><strong>Nazionalità:</strong> {{ $movie->nationality }}</p>
+                            <p class="card-text"><strong>Data:</strong> {{ $movie->date }}</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
 </body>
 
 </html>
