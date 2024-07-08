@@ -10,12 +10,11 @@
 </head>
 
 <body>
-    <h1>
-        Prova
-    </h1>
-
-    <img src="{{ Vite::asset('resources/img/duck.jpg') }}" alt="Paperella Laravel Template">
-
+    @php
+        @foreach ( $movies as $movie )
+        <p> {{ $movie -> title }}</p>
+        @endforeach
+    @endphp
 </body>
 
 </html>
