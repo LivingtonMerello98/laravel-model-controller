@@ -10,11 +10,10 @@
 </head>
 
 <body>
-    @php
-        @foreach ( $movies as $movie )
-        <p> {{ $movie -> title }}</p>
+
+        @foreach ($movies as $movie)
+        <h5 class="card-title"> Titolo : {{ $movie->title }}</h5>
         @endforeach
-    @endphp
 </body>
 
 </html>
