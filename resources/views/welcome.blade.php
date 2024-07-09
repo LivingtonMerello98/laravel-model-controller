@@ -16,7 +16,8 @@
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Titolo: {{ $movie->title }}</h5>
+                            <h3 class="card-title">Titolo: {{ $movie->title }}</h3>
+                            <h5 class="card-title">Titolo originale: {{ $movie->original_title }}</h5>
                             <p class="card-text"><strong>Voto:</strong> {{ $movie->vote }}</p>
                             <p class="card-text"><strong>Nazionalità:</strong> {{ $movie->nationality }}</p>
                             <p class="card-text"><strong>Data:</strong> {{ $movie->date }}</p>
